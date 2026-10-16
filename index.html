@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Invoice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Smart Invoice Assistant</h1>
+        <p>Your local AI assistant for managing invoices</p>
+    </header>
+
+    <main>
+        <section class="invoice-card">
+            <h2>Analyze Your Invoice</h2>
+            <p>Paste your invoice text below to get started.</p>
+
+            <label for="invoiceText">Invoice Text</label>
+            <textarea
+                id="invoiceText"
+                placeholder="Paste your invoice details here..."
+                rows="10"
+            ></textarea>
+
+            <button id="analyzeBtn">Analyze Invoice</button>
+
+            <div id="result">
+                <h3>Invoice Analysis</h3>
+                <p id="status">Your results will appear here.</p>
+                <button id="reminderBtn" disabled>Generate Payment Reminder</button>
+
+<textarea
+    id="reminderText"
+    placeholder="Your payment reminder will appear here..."
+    rows="6"
+    readonly
+></textarea>
+
+<button id="copyBtn" disabled>Copy Reminder</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by local open-source AI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
